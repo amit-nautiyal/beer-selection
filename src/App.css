@@ -1,38 +1,67 @@
-.App {
+.jumbotron {
+  margin: 30px;
+  padding: 30px;
+}
+
+.table-wrappper {
+  margin: 30px;
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  padding: 16px;
+  position: relative;
+  height: 500px;
+}
+
+.product h3 {
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product p {
+  text-align: justify;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-props {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  background: #666;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.beer-image {
+  height: 150px;
+  margin: 0 auto;
+  padding: 5px;
+  filter: drop-shadow(6px 3px 7px #000);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand {
+  height: auto;
+  padding-left: 30px;
+}
+
+.navbar-text {
+  margin-top: 50px;
 }
